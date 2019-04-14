@@ -1,0 +1,36 @@
+----------------------------------------------------------------------------
+Wed Jun 25 23:18:48 EDT 2008
+Dave Ashley dashxdr@gmail.com
+
+Version is now 10
+o Fixed up all the compiler warnings, turned on -Wall
+o Use sdl-config in Makefile
+o Added Makefile.osx for building under MAC OSX
+----------------------------------------------------------------------------
+Sat Nov  6 13:09:17 PST 1999
+Dave Ashley  dash@xdr.com
+Version is now 08
+o Took out the wizard pattern from Pysol
+o Added a nauseating number of patterns from gimp
+o Modified pcx reader to deal with separate bit planes (small pcx files with
+  few colors).
+----------------------------------------------------------------------------
+Fri Nov  5 16:29:42 PST 1999
+Dave Ashley dash@xdr.com
+Version is now 07
+o Took some gif patterns from Pysol and added background changing with F2.
+  data/bg#.pcx are the background files.
+o Added F1 to switch tilesets.
+  data/tiles#.pcx are the tile set files.
+----------------------------------------------------------------------------
+Fri Nov  5 14:05:12 PST 1999
+Dave Ashley dash@xdr.com
+Version is now 06
+o Added arrow keys for undo/redo.
+o Changed behaviour of button clicking, so there is no indication of which
+  tiles are movable anymore. Clicking on the first tile highlights it until
+  it is clocked on again or a matching tile is clicked on, then they both
+  vanish. My wife has trouble seeing the highlighted tiles though...
+o Began working on touching up the artwork...
+o Used gettimeofday() to randomize the game.
+----------------------------------------------------------------------------

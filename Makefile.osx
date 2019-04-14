@@ -1,0 +1,25 @@
+#DBG += -g
+#DBG += -pg
+CC	= gcc
+CFLAGS = -O2 -Wall -I/Library/Frameworks/SDL.framework/Headers $(DBG)
+
+LDFLAGS += -framework SDL -framework Cocoa -o $@
+
+
+all: lopan
+lopan: gfx.o font.o lopan.o SDLMain.o
+
+
+SDLMain.o: SDLmain.m
+gfx.o: gfx.c gfx.h
+font.o: font.c font.h
+
+
+clean:
+	rm -f *.o lopan
+
+test:	all
+	./lopan
+
+
+
